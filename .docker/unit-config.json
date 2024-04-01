@@ -1,0 +1,41 @@
+{
+  "listeners": {
+    "*:80": {
+      "forwarded": {
+          "protocol": "X-Forwarded-Proto",
+          "source": [
+              "0.0.0.0/0"
+          ]
+      },
+      "pass": "routes"
+    }
+  },
+  "routes": [
+    {
+      "match": {
+        "uri": "!/index.php"
+      },
+      "action": {
+        "share": "/app/public$uri",
+        "fallback": {
+          "pass": "applications/laravel"
+        }
+      }
+    }
+  ],
+  "applications": {
+    "laravel": {
+      "type": "php",
+      "root": "/app/public/",
+      "script": "index.php",
+      "options": {
+        "admin": {
+          "post_max_size": "100M",
+          "upload_max_filesize": "100M",
+          "memory_limit": "512M",
+          "error_log": "/dev/stdout"
+        }
+      }
+    }
+  }
+}

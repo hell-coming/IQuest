@@ -1,0 +1,6 @@
+@forward 'vuetify/settings' with (
+  $field-outline-opacity: 1,
+  $field-transition-timing: 0,
+
+  $skeleton-loader-background: none
+);

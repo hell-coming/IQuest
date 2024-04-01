@@ -1,0 +1,91 @@
+// стили для модального окана
+@import './fonts.scss';
+
+.v-overlay__scrim {
+  background-color: $color-base2 !important;
+  opacity: 4% !important;
+}
+
+.v-input__details,
+.v-field,
+.v-input__control {
+  font-family: Onest;
+}
+
+.v-field {
+  color: $color-opacity025;
+
+  &__input {
+    color: $color-base2 !important;
+  }
+
+  &--dirty {
+    .v-field__outline {
+      opacity: 1;
+      color: white;
+    }
+
+    .v-label {
+      color: $color-opacity06;
+      opacity: 1;
+    }
+  }
+
+  &--focused {
+    .v-field__input {
+      color: $color-base2;
+    }
+
+    .v-label {
+      color: $color-opacity06;
+    }
+  }
+}
+
+.mdi-checkbox-marked {
+  color: $color-primary;
+}
+
+.mdi-checkbox-marked::before {
+  background: white;
+  width: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 12px;
+}
+
+.v-input--error,
+.v-field--error:not(.v-field--disabled) .v-field__outline,
+.v-messages {
+  color: $color-red !important;
+}
+
+.v-checkbox {
+  color: $color-opacity06;
+
+  .v-selection-control--density-default {
+    --v-selection-control-size: 32px;
+  }
+  .v-selection-control {
+    min-height: 0 !important;
+  }
+
+  .v-input__details {
+    padding-top: 1px !important;
+    min-height: 0;
+  }
+}
+
+.v-label {
+  top: 18px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .v-dialog > .v-overlay__content {
+    max-height: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}

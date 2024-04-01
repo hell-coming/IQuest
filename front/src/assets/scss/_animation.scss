@@ -1,0 +1,48 @@
+/* Бургер меню */
+.menu-enter-active,
+.menu-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.menu-enter-from,
+.menu-leave-to {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+/* Список праздников - Бургер */
+.holiday-enter-active,
+.holiday-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.holiday-enter-from,
+.holiday-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Кнопка бургера */
+
+.burger-button-enter-active,
+.burger-button-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.burger-button-from,
+.burger-button-to {
+  opacity: 0;
+}
+
+/* Список праздников */
+
+.holidays-list-enter-active,
+.holidays-list-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.holidays-list-enter-from,
+.holidays-list-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}

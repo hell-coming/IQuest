@@ -1,0 +1,32 @@
+.swiper-pagination-bullet {
+  background-color: $color-opacity025;
+  width: 100%;
+  height: 6px;
+  opacity: 1;
+  border-radius: $cover-2;
+}
+
+.swiper-creative,
+.swiper-slide {
+  overflow: visible !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-opacity06;
+}
+
+.swiper-button {
+  background: none;
+  border: none;
+  width: 40px;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    path {
+      stroke-opacity: 1;
+    }
+  }
+}

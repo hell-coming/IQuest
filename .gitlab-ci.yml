@@ -1,0 +1,7 @@
+include:
+  - local: .gitlab/**.yml
+  - remote: "https://gitasap.ru/iac/gitlab-ci/-/raw/master/v2/shared-include.yml"
+stages:
+  - build
+  - test
+  - deploy

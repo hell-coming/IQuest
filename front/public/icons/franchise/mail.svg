@@ -1,0 +1,11 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="PeopleIcon">
+<path id="Vector 122" d="M18.7705 29.3953L38.8863 42.6168C39.5608 43.0601 40.4356 43.0546 41.1044 42.6028L60.6557 29.3953M5 62V18C5 16.8954 5.89543 16 7 16H73C74.1046 16 75 16.8954 75 18V62C75 63.1046 74.1046 64 73 64H7C5.89543 64 5 63.1046 5 62Z" stroke="url(#paint0_linear_3076_61867)" stroke-width="2" stroke-linecap="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3076_61867" x1="5" y1="63.9701" x2="77.6736" y2="59.3823" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8742DB"/>
+<stop offset="1" stop-color="#D641DD"/>
+</linearGradient>
+</defs>
+</svg>
